@@ -1,0 +1,99 @@
+/* Full-page background */
+body {
+ background-color: #edf1f5; /* Light cyan background */
+  font-family: Arial, sans-serif;
+}
+
+/* Centered white box */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* White box styling */
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Login text */
+.login-title {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Instructions */
+.login-instructions {
+  text-align: left;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+/* Email input field */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.login-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Continue button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-button.enabled {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-button.disabled {
+  background-color: #ccc;
+  color: gray;
+  cursor: not-allowed;
+}
+
+.login-button.enabled:hover {
+  background-color: #0056b3;
+}
+
+/* Privacy link */
+.privacy-link {
+  text-align: left;
+  font-size: 0.875rem;
+  color: #007bff;
+  margin-top: 1rem;
+}
+
+.privacy-link a {
+  text-decoration: underline;
+}
