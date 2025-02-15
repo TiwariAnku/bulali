@@ -72,7 +72,7 @@ const Home = () => {
   <Link to="/Logins">
     <MdOutlinePerson4 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
   </Link>
-  <Link href="/portfolio">
+  <Link to="/Cart">
     <TbBriefcase2 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
   </Link>
 </div>;
