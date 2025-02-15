@@ -53,3 +53,59 @@
     background-color: #0056b3;
   }
   
+  .contact-container p {
+    white-space: pre-line;  /* Ensures line breaks */
+    font-weight: 300;       /* Lighter font weight */
+    font-size: 16px;        /* Adjust font size if needed */
+    line-height: 1.6;       /* Improves readability */
+    color: #555;            /* Slightly lighter text color */
+    text-align: justify;     /* Better alignment */
+    max-width: 80%;         /* Keeps text from stretching too wide */
+    margin: 0 auto 20px;    /* Centers text with spacing */
+  }
+
+
+  .additional-info p {
+    margin: 5px 0;
+    font-weight: normal;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 250px;
+  }
+  
+  .info-logo {
+    width: 24px;  /* Adjust size of the logo */
+    height: 24px;
+    margin-right: 10px;  /* Space between logo and text */
+  }
+  
+  .additional-info p {
+    margin: 0;
+  }
+  
+  .info-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    width: 48%; /* Adjust to fit two items in one line */
+  }
+  
+  .info-logo {
+    width: 24px;  /* Adjust size of the logo */
+    height: 24px;
+    margin-right: 10px;  /* Space between logo and text */
+  }
+  
+  .additional-info p {
+    margin: 0;
+    font-weight: normal;
+  }

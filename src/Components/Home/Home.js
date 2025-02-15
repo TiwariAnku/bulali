@@ -63,7 +63,7 @@ const Home = () => {
         <div className="nav-links">
           <Link to="/Catalogs">Online Catalogs</Link>
           <Link to="/Allproducts">All Products</Link>
-          <Link to="/Catalog">All Collections</Link>
+          <Link to="/Allcollection">All Collections</Link>
           <Link to="/Contact">Contact us for Informations</Link>
 
 

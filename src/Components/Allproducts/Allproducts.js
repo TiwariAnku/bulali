@@ -7,17 +7,21 @@ import pillow from "../../assets/images/pillow.jpg";
 import table from "../../assets/images/table.jpg";
 import lamp from "../../assets/images/lamp.jpg";
 import "./Allproducts.css"; // Import the CSS file
-
+import bluet from "../../assets/images/bluet.jpg"; // Default image
+import whitet from "../../assets/images/whitet.jpg"; // Image on hover
+import redImg from "../../assets/images/red.jpg"; // Red color image
+import blueImg from "../../assets/images/blue.jpg"; // Blue color image
+import greenImg from "../../assets/images/green.jpg"; // Green color image
 
 const Allproducts = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentImage, setCurrentImage] = useState(bluet);
 
   const products = [
     { id: 1, image: mug, name: "Mandala Wall Art", price: "€45.00" },
     { id: 2, image: pillow, name: "Boho Pillow Cover", price: "€25.00" },
     { id: 3, image: table, name: "Yoga Mat with Mandala", price: "€60.00" },
     { id: 4, image: lamp, name: "Mandala Lamp", price: "€35.00" },
-  
   ];
 
   // Filter products based on the search term
@@ -38,7 +42,7 @@ const Allproducts = () => {
         <div className="nav-links">
           <Link to="/catalogs">Online Catalogs</Link>
           <Link to="/Allproducts">All Products</Link>
-          <Link to="/collections">All Collections</Link>
+          <Link to="/Allcollection">All Collections</Link>
           <Link to="/Logins">Login</Link>
         </div>
         <div className="nav-icons">
@@ -58,20 +62,40 @@ const Allproducts = () => {
         />
       </div>
 
-      {/* Product Grid */}
-      <div className="product-grid">
-        {filteredProducts.length > 0 ? (
-          filteredProducts.map((product) => (
-            <div className="product-box" key={product.id}>
-              <img src={product.image} alt={product.name} />
-              <h3>{product.name}</h3>
-              <p>{product.price}</p>
-            </div>
-          ))
-        ) : (
-          <p className="no-results">No products found</p>
-        )}
-      </div>
+      {/* Product Box */}
+      <Link to="/ProductDetails" className="product-link">
+        <div className="product-box">
+          {/* Product Image */}
+          <div
+            className="image-container"
+            onMouseEnter={() => setCurrentImage(whitet)}
+            onMouseLeave={() => setCurrentImage(bluet)}
+          >
+            <img src={currentImage} alt="Product" />
+          </div>
+
+          {/* Product Info */}
+          <h3>Aluminum Love</h3>
+          <p>Type: Premium Metal</p>
+          <p>Rs. 1999</p>
+
+          {/* Color Selection */}
+          <div className="color-options">
+            <div
+              className="color-circle red"
+              onClick={() => setCurrentImage(redImg)}
+            ></div>
+            <div
+              className="color-circle blue"
+              onClick={() => setCurrentImage(blueImg)}
+            ></div>
+            <div
+              className="color-circle green"
+              onClick={() => setCurrentImage(greenImg)}
+            ></div>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };

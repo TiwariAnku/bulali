@@ -8,7 +8,8 @@ import Logins from './Components/Logins/Logins';
 import Fotter from './Components/Fotter/Fotter'; // Ensure this is the correct spelling
 import Catalog from './Components/Catalog/Catalog'; // Ensure this is the correct spelling
 import Contact from './Components/Contact/Contact'; // Ensure this is the correct spelling
-
+import Allcollection from './Components/Allcollection/Allcol';
+import ProductDetails from './Components/ProductDetails/productdetails';
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,8 @@ function App() {
           <Route path="/logins" element={<Logins />} />
           <Route path="/catalog" element={<Catalog />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Allcollection" element={<Allcollection />} />
+        <Route path="/ProductDetails" element={<ProductDetails />} />
         </Routes>
       </div>
       <Fotter /> {/* Correctly placed Footer outside Routes */}

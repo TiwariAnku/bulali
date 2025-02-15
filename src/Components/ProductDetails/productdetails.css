@@ -1,0 +1,294 @@
+.product-details {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .product-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+   
+  }
+  .product-container1 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+   margin-bottom: auto;
+   width: 1000px;
+    background-color: #fff;
+    padding-right: 30px;
+  }
+ 
+  /* Image Section */
+  .image-section {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .thumbnail-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .thumbnail-slider img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .main-image img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Product Info */
+  .info-section {
+    max-width: 400px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+  }
+  
+  hr {
+    margin: 15px 0;
+  }
+  
+  /* Dropdowns */
+  .dropdowns label,
+  .color-selection label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Color Options */
+  .color-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .color-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ddd;
+  }
+  
+  .red { background-color: red; }
+  .blue { background-color: blue; }
+  .green { background-color: green; }
+  
+  .color-circle:hover {
+    border: 2px solid black;
+  }
+  
+  /* Quantity Selector */
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .quantity-selector button {
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .delivery-info {
+    margin: 10px 0;
+    color: gray;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart {
+    background-color: cyan;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .gpay-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .gpay-button img {
+    width: 100px;
+  }
+  
+  .more-payment {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .wishlist {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font: bold;
+    color: #000000;
+    transition: color 0.3s;
+  }
+  
+  
+  .nav-links a:hover {
+    color: #000;
+  }
+
+
+  .zoom-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .zoom-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Light Transparent */
+    display: none;
+    cursor: zoom-in;
+  }
+  
+  .main-image:hover .zoom-box {
+    display: block;
+  }
+  
+  .main-image img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .main-image:hover img {
+    transform: scale(1.5); /* Zoom Effect */
+  }
+  
+  /* Shipping Section */
+.shipping-section {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  width: 400px;
+ padding-right: 20px;
+ top: 100px;
+}
+
+.shipping-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.shipping-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.shipping-form select,
+.shipping-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.estimate-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.estimate-btn:hover {
+  background: #444;
+}
+
+.refund-link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.refund-link:hover {
+  text-decoration: underline;
+}
