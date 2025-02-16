@@ -72,7 +72,7 @@ const CartItem = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="product-details">
+                <td className="product-details1">
                   <img src={whitet} alt="Sweatshirt" />
                   <div>
                     <p className="product-title">

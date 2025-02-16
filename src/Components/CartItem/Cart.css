@@ -63,12 +63,12 @@
     text-align: left;
   }
   
-  .product-details {
+  .product-details1 {
     display: flex;
     align-items: center;
   }
   
-  .product-details img {
+  .product-details1 img {
     width: 80px;
     height: 80px;
     object-fit: cover;
