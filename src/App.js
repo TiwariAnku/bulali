@@ -30,7 +30,7 @@ function App() {
         <Route path="/Allcollection" element={<Allcollection />} />
         <Route path="/ProductDetails" element={<ProductDetails />} />
         <Route path="/CartItem" element={<CartItem />} />
-        <Route path="/Cart" element={<Cart />} />
+        <Route path="/CartItem" element={<CartItem />} />
 
 
         </Routes>
