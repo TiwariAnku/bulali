@@ -50,20 +50,16 @@ const Home = () => {
   ];
 
   return (
-
+    
     <div className="carousel-page">
       {/* Navbar */}
       <div className="navbar">
-  
         <h1 className="logo">
-        
           <img
             src="https://blululi.com/cdn/shop/files/Logo_blululi_horizontal-2.png?v=1731863846&width=140"
             alt="logo"
           />
-     
         </h1>
-       
         <div className="nav-links">
           <Link to="/Catalogs">Online Catalogs</Link>
           <Link to="/Allproducts">All Products</Link>
@@ -73,13 +69,13 @@ const Home = () => {
 
         </div>
         <div className="nav-icons">
-          <Link to="/Logins">
-            <MdOutlinePerson4 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
-          </Link>
-          <Link to="/CartItem">
-            <TbBriefcase2 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
-          </Link>
-        </div>;
+  <Link to="/Logins">
+    <MdOutlinePerson4 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
+  </Link>
+  <Link to="/Cart">
+    <TbBriefcase2 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
+  </Link>
+</div>;
       </div>
 
       {/* Hero Section */}
@@ -92,7 +88,7 @@ const Home = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="slide" style={{ backgroundImage: `url(${slide.image})` }}>
+            <div className="slide" style={{ backgroundImage: url(${slide.image}) }}>
               <div className="swiper-slide">
                 <motion.div
                   className="slide-content"

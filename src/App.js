@@ -11,6 +11,10 @@ import Contact from './Components/Contact/Contact'; // Ensure this is the correc
 import Allcollection from './Components/Allcollection/Allcol';
 import ProductDetails from './Components/ProductDetails/productdetails';
 import CartItem from './Components/CartItem/Cart'
+
+
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +30,9 @@ function App() {
         <Route path="/Allcollection" element={<Allcollection />} />
         <Route path="/ProductDetails" element={<ProductDetails />} />
         <Route path="/CartItem" element={<CartItem />} />
+        <Route path="/Cart" element={<Cart />} />
+
+
         </Routes>
       </div>
       <Fotter /> {/* Correctly placed Footer outside Routes */}
