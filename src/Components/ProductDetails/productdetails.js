@@ -24,12 +24,16 @@ const ProductDetails = () => {
     <div className="carousel-page">
       {/* Navbar */}
       <div className="navbar">
-        <h1 className="logo">
-          <img
-            src="https://blululi.com/cdn/shop/files/Logo_blululi_horizontal-2.png?v=1731863846&width=140"
-            alt="logo"
-          />
-        </h1>
+         <Link to="Home">
+                <h1 className="logo">
+                
+                  <img
+                    src="https://blululi.com/cdn/shop/files/Logo_blululi_horizontal-2.png?v=1731863846&width=140"
+                    alt="logo"
+                  />
+             
+                </h1>
+                </Link>
         <div className="nav-links">
           <Link to="/Allproducts">All Products</Link>
           <Link to="/Allcollection">All Collections</Link>
