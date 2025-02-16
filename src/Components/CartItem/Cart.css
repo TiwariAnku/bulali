@@ -1,19 +1,6 @@
-/* Cart Page Styling */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  }
   
-  .carousel-page {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-  }
-  
+
   /* Navbar */
   .navbar {
     display: flex;
@@ -76,12 +63,12 @@ body {
     text-align: left;
   }
   
-  .product-details {
+  .product-details1 {
     display: flex;
     align-items: center;
   }
   
-  .product-details img {
+  .product-details1 img {
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -197,4 +184,3 @@ body {
       margin-bottom: 10px;
     }
   }
-  

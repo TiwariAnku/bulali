@@ -10,7 +10,10 @@ import Catalog from './Components/Catalog/Catalog'; // Ensure this is the correc
 import Contact from './Components/Contact/Contact'; // Ensure this is the correct spelling
 import Allcollection from './Components/Allcollection/Allcol';
 import ProductDetails from './Components/ProductDetails/productdetails';
-import Cart from './Components/Cart/Cart';
+import CartItem from './Components/CartItem/Cart'
+
+
+
 
 function App() {
   return (
@@ -26,7 +29,9 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Allcollection" element={<Allcollection />} />
         <Route path="/ProductDetails" element={<ProductDetails />} />
-        <Route path="/Cart" element={<Cart />} />
+        <Route path="/CartItem" element={<CartItem />} />
+        <Route path="/CartItem" element={<CartItem />} />
+
 
         </Routes>
       </div>

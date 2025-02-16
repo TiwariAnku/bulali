@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
 import "swiper/css";
-import "swiper/css/autoplay";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { TbBriefcase2 } from "react-icons/tb";
@@ -50,7 +49,6 @@ const Home = () => {
   ];
 
   return (
-    
     <div className="carousel-page">
       {/* Navbar */}
       <div className="navbar">
@@ -65,17 +63,15 @@ const Home = () => {
           <Link to="/Allproducts">All Products</Link>
           <Link to="/Allcollection">All Collections</Link>
           <Link to="/Contact">Contact us for Informations</Link>
-
-
         </div>
         <div className="nav-icons">
-  <Link to="/Logins">
-    <MdOutlinePerson4 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
-  </Link>
-  <Link to="/Cart">
-    <TbBriefcase2 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
-  </Link>
-</div>;
+          <Link to="/Logins">
+            <MdOutlinePerson4 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
+          </Link>
+          <Link to="/CartItem">
+            <TbBriefcase2 color="#000000" size={30} style={{ padding: "10px", cursor: "pointer" }} />
+          </Link>
+        </div>
       </div>
 
       {/* Hero Section */}
