@@ -13,6 +13,11 @@ import table from '../../assets/images/table.jpg';
 import lamp from '../../assets/images/lamp.jpg';
 import rug from '../../assets/images/rug.jpg';
 import vase from '../../assets/images/vase.jpg';
+//import whitet from "../../assets/images/whitet.jpg";
+import bluet from "../../assets/images/bluet.jpg";  
+//import redImg from "../../assets/images/red.jpg";  
+import blueImg from "../../assets/images/blue.jpg"; 
+import greenImg from "../../assets/images/green.jpg";
 
 const Home = () => {
   const slides = [
@@ -59,7 +64,6 @@ const Home = () => {
           />
         </h1>
         <div className="nav-links">
-          <Link to="/Catalogs">Online Catalogs</Link>
           <Link to="/Allproducts">All Products</Link>
           <Link to="/Allcollection">All Collections</Link>
           <Link to="/Contact">Contact us for Informations</Link>
@@ -130,9 +134,47 @@ const Home = () => {
           </div>
         ))}
       </div>
+      
+
+
 
       <div className="vision">
         <h1>Art That Blends Heart and Innovation</h1>
+
+        <div className="complete-cart">
+        <div className="product-recommendations">
+          <div className="product-card">
+            <img src={bluet} alt="Product 1" />
+            <p>Mandala Art Hand-Drawn Tote Bag (AOP)</p>
+            <p className="price">From Rs. 1,400.00</p>
+            <button className="add-to-cart">Choose options</button>
+          </div>
+
+          <div className="product-card">
+            <span className="discount-badge">Save 20%</span>
+            <img src={blueImg} alt="Product 2" />
+            <p>Green Invoice Template for Small Businesses</p>
+            <p className="price">Rs. 800.00 <span className="old-price">Rs. 1,000.00</span></p>
+            <button className="add-to-cart">Add to cart</button>
+          </div>
+
+          <div className="product-card">
+            <img src={greenImg} alt="Product 3" />
+            <p>Blululi Versatile Weekly Planners - A4</p>
+            <p className="price">Rs. 300.00</p>
+            <button className="add-to-cart">Add to cart</button>
+          </div>
+
+          {/* <div className="product-card">
+            <img src={whitet} alt="Product 4" />
+            <p>Zipper Wallet - Rainbow Mandala Art</p>
+            <p className="price">Rs. 1,800.00</p>
+            <button className="add-to-cart">Add to cart</button>
+          </div> */}
+        </div>
+      </div>
+          
+
         <p>Our designs combine traditional artistry with modern technology. Each product is thoughtfully created to bring vibrant energy, balance, and joy into your daily routine.</p>
       </div>
     </div>
